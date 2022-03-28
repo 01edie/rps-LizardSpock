@@ -14,12 +14,27 @@
   
   <div class="container">
     <div class="computer">
-      <img class="computer" src="./assets/computer-on.png" alt="computer">
+      <img class="computer" id="computer-1" src="./assets/computer-on.png" alt="computer">
+      <img class="computer" id="computer-2" src="./assets/computer-off.png" alt="computer">
     </div>
     <img src="./assets/versus.png" alt="" class="versus">
-    <div class="user"></div>
+    <div class="user-space">
+      <div class="user-inputs">
+      <button class="user-choice" value="rock" onclick="game(value)"><i class="fa-solid fa-hand-back-fist"></i></button>
+      <button class="user-choice" value="paper" onclick="game(value)"><i class="fa-solid fa-hand"></i></button>
+      <button class="user-choice" value="scissor" onclick="game(value)"><i class="fa-solid fa-hand-scissors"></i></button>
+      <button class="user-choice" value="lizard" onclick="game(value)"><i class="fa-solid fa-hand-lizard"></i></button>
+      <button class="user-choice" value="spock" onclick="game(value)"><i class="fa-solid fa-hand-spock"></i></button>
+      </div>
+      <div class="starting-message">Let's start the Game! 🃏</div>
+    </div>
+    
   </div>
+  <div class="user-score-plate">User: &nbsp;<span id="user-score">0</span></div>
+  <div class="computer-score-plate">Computer: &nbsp;<span id="computer-score">0</span></div>
+  <div class="message-box">What are you waiting for! <br>let's roll 🎲</div>
   <button id="start-game-btn" class="start-game-btn">Start Game</button>
+  <button id="end-game-btn" class="end-game-btn">End Game</button>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
