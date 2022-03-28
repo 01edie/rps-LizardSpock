@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  
+  <header>Rock Paper Scissor ✊🏻</header>
   <div class="container">
     <div class="computer">
       <img class="computer" id="computer-1" src="./assets/computer-on.png" alt="computer">
@@ -29,12 +29,24 @@
       <div class="starting-message">Let's start the Game! 🃏</div>
     </div>
     
-  </div>
-  <div class="user-score-plate">User: &nbsp;<span id="user-score">0</span></div>
+    <div class="user-score-plate">User: &nbsp;<span id="user-score">0</span></div>
   <div class="computer-score-plate">Computer: &nbsp;<span id="computer-score">0</span></div>
   <div class="message-box">What are you waiting for! <br>let's roll 🎲</div>
   <button id="start-game-btn" class="start-game-btn">Start Game</button>
   <button id="end-game-btn" class="end-game-btn">End Game</button>
+  
+  </div>
+
+  <div class="modal-active-game" id="modal-active-game">
+    <div class="computer-turn turn"><i class="fa-solid fa-hand-back-fist"></i></div>
+    <div class="time-counter">3</div>
+    <div class="user-turn turn"><i class="fa-solid fa-hand-back-fist"></i></div>
+    <div class="modal-message">
+    
+    </div>
+    
+  </div>
+
   <script src="./scripts/script.js"></script>
 </body>
 </html>
