@@ -459,6 +459,15 @@ header{
   .versus-animation{
     width: 10rem;
   }
+  @keyframes versus-animation {
+    0% {
+      width: 5rem;
+    }
+  
+    100% {
+      width: 10rem;
+    }
+  }
   .user-space{
     height: 20rem;
     width: 15rem;
@@ -484,7 +493,7 @@ header{
   .modal-message{
     height: 7rem;
     width: 20rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
 }
